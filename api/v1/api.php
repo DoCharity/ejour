@@ -28,32 +28,40 @@
           if ($rs = $db->query($sql)) {
               $row=$rs->fetch();
               $result=$row[name];
+              $result=json_encode($result);
           } else {
               $result="Connection error";
+              $result=json_encode($result);
           }//获取景点名称
       } else if($info=='spot-description') {
           $sql="select description from main where code='$spot'";
           if ($rs = $db->query($sql)) {
               $row=$rs->fetch();
               $result=$row[description];
+              $result=json_encode($result);
           } else {
               $result="Connection error";
+              $result=json_encode($result);
           }//获取景点介绍
       } else if($info=='spot-pic') {
           $sql="select pic from main where code='$spot'";
           if ($rs = $db->query($sql)) {
               $row=$rs->fetch();
               $result=$row[pic];
+              $result=json_encode($result);
           } else {
               $result="Connection error";
+              $result=json_encode($result);
           }//获取景点图片
       } else {
           $sql="select $info from $spot where id=$id";
           if ($rs = $db->query($sql)) {
               $row=$rs->fetch();
               $result=$row[$info];
+              $result=json_encode($result);
           } else {
               $result="Connection error";
+              $result=json_encode($result);
           }//正常处理
       }
       echo($result);
