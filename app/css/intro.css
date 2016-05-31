@@ -1,0 +1,25 @@
+    #header .lefts{
+    	/*-webkit-box-pack: start;
+    	color:#FFFFFF;*/
+    	margin-left:10px;
+    	width: 36px;
+    	background: url(../image/back.png) center center no-repeat;
+    	background-size: 24px 24px;
+    }
+    
+    .rights{
+        float: left;
+	   	margin-right:10px;
+	    width: 36px;
+    	background: url(../image/share.png) center center no-repeat;
+    	background-size: 24px 24px;
+    }
+    #pic{
+    	margin-top:10px;
+    	width:80px;
+    	margin-bottom:30px;
+    	border-radius: 3000px;
+    	-webkit-transition: .5s;
+	    transition: .5s;
+    }
+	

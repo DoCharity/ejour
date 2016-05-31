@@ -1,0 +1,16 @@
+    #header .lefts{
+    	/*-webkit-box-pack: start;
+    	color:#FFFFFF;*/
+    	margin-left:10px;
+    	width: 36px;
+    	background: url(../image/back.png) center center no-repeat;
+    	background-size: 24px 24px;
+    }
+    
+    .rights{
+        float: left;
+	   	margin-right:10px;
+	    width: 36px;
+    	background: url(../image/share.png) center center no-repeat;
+    	background-size: 24px 24px;
+    }
